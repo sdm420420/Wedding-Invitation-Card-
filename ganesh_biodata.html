@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>श्री गणेशाय नमः - Biodata - Ganesh Kumar</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --maroon: #6B0F1A;
+    --deep-maroon: #3D0008;
+    --gold: #C9972B;
+    --bright-gold: #F5C842;
+    --cream: #FDF6E3;
+    --light-cream: #FFF9EE;
+    --dark-gold: #9A6B1A;
+    --text-dark: #2C0A0A;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--deep-maroon);
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+    cursor: default;
+  }
+
+  /* ===== FLOATING FLOWERS ===== */
+  .flowers-container {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .petal {
+    position: absolute;
+    font-size: 1.5rem;
+    animation: petalFall linear infinite;
+    opacity: 0.7;
+  }
+
+  @keyframes petalFall {
+    0%   { transform: translateY(-50px) rotate(0deg); opacity: 0; }
+    10%  { opacity: 0.7; }
+    90%  { opacity: 0.5; }
+    100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+  }
+
+  /* ===== DIYA LIGHTS ===== */
+  .diya {
+    position: fixed;
+    font-size: 2rem;
+    animation: diyaGlow 2s ease-in-out infinite alternate;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .diya-tl { top: 10px; left: 10px; animation-delay: 0s; }
+  .diya-tr { top: 10px; right: 10px; animation-delay: 0.5s; }
+  .diya-bl { bottom: 10px; left: 10px; animation-delay: 1s; }
+  .diya-br { bottom: 10px; right: 10px; animation-delay: 1.5s; }
+
+  @keyframes diyaGlow {
+    0%  { transform: scale(1);   filter: drop-shadow(0 0 5px #FFA500); }
+    100%{ transform: scale(1.2); filter: drop-shadow(0 0 15px #FF6600) drop-shadow(0 0 30px #FFD700); }
+  }
+
+  /* ===== MAIN WRAPPER ===== */
+  .page-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 15px 40px;
+  }
+
+  /* ===== ANIMATED BORDER ===== */
+  .outer-border {
+    background: linear-gradient(135deg, var(--gold), var(--bright-gold), var(--dark-gold), var(--gold));
+    background-size: 300% 300%;
+    animation: borderShimmer 4s ease infinite;
+    padding: 4px;
+    border-radius: 20px;
+    box-shadow:
+      0 0 30px rgba(201,151,43,0.6),
+      0 0 60px rgba(201,151,43,0.3),
+      inset 0 0 30px rgba(0,0,0,0.3);
+  }
+
+  @keyframes borderShimmer {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .inner-card {
+    background: linear-gradient(160deg, var(--cream) 0%, #FFF3D4 40%, var(--cream) 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    background: linear-gradient(180deg, var(--deep-maroon) 0%, var(--maroon) 100%);
+    padding: 30px 20px 25px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9972B' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+  }
+
+  .header-om {
+    font-size: 2.5rem;
+    color: var(--bright-gold);
+    animation: omPulse 3s ease-in-out infinite;
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(245,200,66,0.8);
+  }
+
+  @keyframes omPulse {
+    0%, 100% { transform: scale(1); text-shadow: 0 0 20px rgba(245,200,66,0.8); }
+    50% { transform: scale(1.05); text-shadow: 0 0 40px rgba(245,200,66,1), 0 0 60px rgba(245,200,66,0.5); }
+  }
+
+  .ganesh-icon {
+    font-size: 5rem;
+    display: block;
+    animation: ganeshFloat 4s ease-in-out infinite;
+    filter: drop-shadow(0 5px 15px rgba(201,151,43,0.5));
+  }
+
+  @keyframes ganeshFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .header-title {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: var(--bright-gold);
+    letter-spacing: 6px;
+    text-shadow: 2px 2px 0px var(--dark-gold), 0 0 30px rgba(245,200,66,0.6);
+    animation: titleGlow 3s ease-in-out infinite alternate;
+    margin: 10px 0;
+  }
+
+  @keyframes titleGlow {
+    from { text-shadow: 2px 2px 0px var(--dark-gold), 0 0 20px rgba(245,200,66,0.5); }
+    to   { text-shadow: 2px 2px 0px var(--dark-gold), 0 0 40px rgba(245,200,66,0.9), 0 0 60px rgba(245,200,66,0.3); }
+  }
+
+  /* ===== WEDDING TIMER ===== */
+  .timer-section {
+    background: linear-gradient(135deg, var(--maroon), var(--deep-maroon));
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid var(--gold);
+    border-bottom: 3px solid var(--gold);
+    position: relative;
+  }
+
+  .timer-section::before, .timer-section::after {
+    content: '🌸';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    animation: flowerSpin 4s linear infinite;
+  }
+  .timer-section::before { left: 20px; }
+  .timer-section::after { right: 20px; animation-direction: reverse; }
+
+  @keyframes flowerSpin {
+    from { transform: translateY(-50%) rotate(0deg); }
+    to   { transform: translateY(-50%) rotate(360deg); }
+  }
+
+  .timer-label {
+    font-family: 'Cinzel Decorative', cursive;
+    color: var(--bright-gold);
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .wedding-date {
+    color: var(--cream);
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-style: italic;
+  }
+
+  .timer-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .timer-box {
+    background: rgba(201,151,43,0.15);
+    border: 2px solid var(--gold);
+    border-radius: 10px;
+    padding: 10px 14px;
+    min-width: 70px;
+    animation: timerPulse 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes timerPulse {
+    from { box-shadow: 0 0 5px rgba(201,151,43,0.3); }
+    to   { box-shadow: 0 0 15px rgba(201,151,43,0.7); }
+  }
+
+  .timer-number {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.8rem;
+    color: var(--bright-gold);
+    display: block;
+    line-height: 1;
+  }
+
+  .timer-unit {
+    font-size: 0.65rem;
+    color: var(--cream);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 4px;
+    display: block;
+  }
+
+  /* ===== IMAGE SLIDER ===== */
+  .slider-section {
+    background: var(--deep-maroon);
+    padding: 25px 20px;
+    border-bottom: 3px solid var(--gold);
+  }
+
+  .slider-title {
+    font-family: 'Cinzel Decorative', cursive;
+    color: var(--bright-gold);
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 3px solid var(--gold);
+    box-shadow: 0 0 20px rgba(201,151,43,0.5);
+  }
+
+  .slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    animation: autoSlide 15s infinite;
+  }
+
+  .slide {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .slide:nth-child(1) { background: linear-gradient(135deg, #6B0F1A, #3D0008); }
+  .slide:nth-child(2) { background: linear-gradient(135deg, #3D0008, #5A0D15); }
+  .slide:nth-child(3) { background: linear-gradient(135deg, #5A0D15, #6B0F1A); }
+  .slide:nth-child(4) { background: linear-gradient(135deg, #6B0F1A, #4A0A10); }
+  .slide:nth-child(5) { background: linear-gradient(135deg, #4A0A10, #3D0008); }
+
+  .slide-text {
+    font-family: 'Cinzel Decorative', cursive;
+    color: var(--bright-gold);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  @keyframes autoSlide {
+    0%, 18%  { transform: translateX(0%); }
+    20%, 38% { transform: translateX(-20%); }
+    40%, 58% { transform: translateX(-40%); }
+    60%, 78% { transform: translateX(-60%); }
+    80%, 98% { transform: translateX(-80%); }
+    100%     { transform: translateX(0%); }
+  }
+
+  /* ===== GOLD DIVIDER ===== */
+  .gold-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 20px;
+    background: linear-gradient(90deg, var(--maroon), var(--deep-maroon), var(--maroon));
+  }
+
+  .gold-divider::before, .gold-divider::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  .divider-icon { font-size: 1.2rem; }
+
+  /* ===== SECTIONS GRID ===== */
+  .sections-wrapper {
+    padding: 5px 15px 20px;
+    background: var(--light-cream);
+  }
+
+  .grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 15px 0;
+  }
+
+  @media (max-width: 600px) {
+    .grid-2col { grid-template-columns: 1fr; }
+  }
+
+  .info-section {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(107,15,26,0.15);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    animation: sectionFadeIn 0.8s ease both;
+  }
+
+  .info-section::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, var(--gold), var(--bright-gold), var(--dark-gold));
+    border-radius: 14px;
+    z-index: -1;
+  }
+
+  @keyframes sectionFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .section-header {
+    background: linear-gradient(135deg, var(--maroon), var(--deep-maroon));
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-title {
+    font-family: 'Cinzel Decorative', cursive;
+    color: var(--bright-gold);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .section-icon { font-size: 1.1rem; }
+
+  .section-body {
+    padding: 12px 15px;
+    background: linear-gradient(160deg, #FFFEF8, #FFF9EE);
+  }
+
+  .info-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed rgba(201,151,43,0.3);
+    animation: rowSlideIn 0.5s ease both;
+  }
+
+  .info-row:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  @keyframes rowSlideIn {
+    from { opacity: 0; transform: translateX(-10px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  .row-bullet {
+    color: var(--gold);
+    font-size: 0.9rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+  .row-label {
+    font-weight: 600;
+    color: var(--maroon);
+    font-size: 0.78rem;
+    min-width: 85px;
+    flex-shrink: 0;
+  }
+
+  .row-value {
+    color: var(--text-dark);
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
+  /* Full width section */
+  .full-section {
+    margin: 0 0 15px;
+  }
+
+  /* ===== CONTACT SECTION ===== */
+  .contact-section {
+    background: linear-gradient(135deg, var(--maroon), var(--deep-maroon));
+    padding: 20px;
+    text-align: center;
+    margin: 0 -0px;
+  }
+
+  .contact-title {
+    font-family: 'Cinzel Decorative', cursive;
+    color: var(--bright-gold);
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+
+  .contact-item {
+    color: var(--cream);
+    margin: 8px 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    animation: contactGlow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes contactGlow {
+    from { text-shadow: none; }
+    to   { text-shadow: 0 0 10px rgba(245,200,66,0.5); }
+  }
+
+  .contact-icon { font-size: 1.1rem; }
+  .contact-text { font-weight: 600; color: var(--bright-gold); }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: var(--deep-maroon);
+    padding: 15px;
+    text-align: center;
+    border-top: 3px solid var(--gold);
+  }
+
+  .footer-flowers {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    animation: footerWave 2s ease-in-out infinite;
+    display: inline-block;
+  }
+
+  @keyframes footerWave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  .footer-text {
+    color: var(--gold);
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  /* ===== DECORATIVE CORNERS ===== */
+  .corner-decor {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.4;
+    animation: cornerSpin 8s linear infinite;
+  }
+  .corner-tl { top: 5px; left: 5px; }
+  .corner-tr { top: 5px; right: 5px; animation-direction: reverse; }
+  .corner-bl { bottom: 5px; left: 5px; animation-direction: reverse; }
+  .corner-br { bottom: 5px; right: 5px; }
+
+  @keyframes cornerSpin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+  /* Animated lotus border */
+  .lotus-border {
+    text-align: center;
+    padding: 8px;
+    background: linear-gradient(90deg, var(--deep-maroon), var(--maroon), var(--deep-maroon));
+    letter-spacing: 3px;
+    font-size: 1rem;
+    animation: lotusFade 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes lotusFade {
+    from { opacity: 0.7; }
+    to   { opacity: 1; }
+  }
+
+  /* Sparkle effect */
+  .sparkle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--bright-gold);
+    animation: sparkleTwinkle 2s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  @keyframes sparkleTwinkle {
+    0%, 100% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1); }
+  }
+
+  /* Shadi announcement */
+  .shadi-banner {
+    background: linear-gradient(135deg, #FFD700, #FFA500, #FF6B35, #FFA500, #FFD700);
+    background-size: 300% 100%;
+    animation: bannerShimmer 3s linear infinite;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  @keyframes bannerShimmer {
+    0%   { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+  }
+
+  .shadi-text {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    color: var(--deep-maroon);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+  }
+
+  .shadi-date {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: var(--deep-maroon);
+    font-style: italic;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Fixed Diya Lights -->
+<div class="diya diya-tl">🪔</div>
+<div class="diya diya-tr">🪔</div>
+<div class="diya diya-bl">🪔</div>
+<div class="diya diya-br">🪔</div>
+
+<!-- Falling Petals -->
+<div class="flowers-container" id="flowersContainer"></div>
+
+<div class="page-wrapper">
+  <div class="outer-border">
+    <div class="inner-card">
+
+      <!-- HEADER -->
+      <div class="header">
+        <div class="corner-decor corner-tl">✿</div>
+        <div class="corner-decor corner-tr">✿</div>
+        <div class="corner-decor corner-bl">✿</div>
+        <div class="corner-decor corner-br">✿</div>
+        <span class="header-om">✦ श्री गणेशाय नमः ✦</span>
+        <span class="ganesh-icon">🐘</span>
+        <h1 class="header-title">BIODATA</h1>
+        <div class="lotus-border">🌸 🌺 🪷 🌸 🌺 🪷 🌸</div>
+      </div>
+
+      <!-- WEDDING BANNER -->
+      <div class="shadi-banner">
+        <div class="shadi-text">💍 विवाह शुभ मुहूर्त 💍</div>
+        <div class="shadi-date">🗓️ 15 April 2026 — Wednesday | शुभ विवाह</div>
+      </div>
+
+      <!-- COUNTDOWN TIMER -->
+      <div class="timer-section">
+        <div class="timer-label">✨ Shadi Countdown ✨</div>
+        <div class="wedding-date">15 अप्रैल 2026 — Ganesh Kumar & Family</div>
+        <div class="timer-boxes">
+          <div class="timer-box">
+            <span class="timer-number" id="days">00</span>
+            <span class="timer-unit">Days</span>
+          </div>
+          <div class="timer-box">
+            <span class="timer-number" id="hours">00</span>
+            <span class="timer-unit">Hours</span>
+          </div>
+          <div class="timer-box">
+            <span class="timer-number" id="minutes">00</span>
+            <span class="timer-unit">Mins</span>
+          </div>
+          <div class="timer-box">
+            <span class="timer-number" id="seconds">00</span>
+            <span class="timer-unit">Secs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE SLIDER -->
+      <div class="slider-section">
+        <div class="slider-title">✦ WEDDING CELEBRATIONS ✦</div>
+        <div class="slider-container">
+          <div class="slides">
+            <div class="slide">
+              <span>🕉️</span>
+              <span class="slide-text">शुभ विवाह</span>
+            </div>
+            <div class="slide">
+              <span>💐</span>
+              <span class="slide-text">Warm Welcome</span>
+            </div>
+            <div class="slide">
+              <span>🪷</span>
+              <span class="slide-text">Mangalashtak</span>
+            </div>
+            <div class="slide">
+              <span>🎊</span>
+              <span class="slide-text">Celebrations</span>
+            </div>
+            <div class="slide">
+              <span>💍</span>
+              <span class="slide-text">Forever Together</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="sections-wrapper">
+
+        <!-- Row 1: Personal + Education -->
+        <div class="grid-2col">
+          <div class="info-section" style="animation-delay:0.1s">
+            <div class="section-header">
+              <span class="section-icon">👤</span>
+              <span class="section-title">Personal Details</span>
+            </div>
+            <div class="section-body">
+              <div class="info-row" style="animation-delay:0.1s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Full Name</span>
+                <span class="row-value">Mr. Ganesh Kumar</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.15s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Date of Birth</span>
+                <span class="row-value">02 January 2001</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.2s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Height</span>
+                <span class="row-value">5'6" (168 cm)</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.25s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Complexion</span>
+                <span class="row-value">Dark-Skinned</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.3s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Religion</span>
+                <span class="row-value">Hindu</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.35s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Caste</span>
+                <span class="row-value">Kushwaha</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.4s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Nationality</span>
+                <span class="row-value">Indian</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.45s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Marital Status</span>
+                <span class="row-value">Unmarried</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.5s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Languages</span>
+                <span class="row-value">Hindi, English</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.55s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Hobbies</span>
+                <span class="row-value">E-Business Man</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section" style="animation-delay:0.2s">
+            <div class="section-header">
+              <span class="section-icon">🎓</span>
+              <span class="section-title">Education</span>
+            </div>
+            <div class="section-body">
+              <div class="info-row" style="animation-delay:0.2s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Secondary 2017</span>
+                <span class="row-value">BSEB Patna</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.25s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Sr. Secondary 2019</span>
+                <span class="row-value">ISC, BSEB Patna</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.3s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">B.A. Psych 2022</span>
+                <span class="row-value">Lalit Narayan Mithila University</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.35s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">M.A. Psych 2024</span>
+                <span class="row-value">Lalit Narayan Mithila University</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.4s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">ADCA</span>
+                <span class="row-value">Wizard-Tech Computer Academy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Professional + Experience -->
+        <div class="grid-2col">
+          <div class="info-section" style="animation-delay:0.3s">
+            <div class="section-header">
+              <span class="section-icon">📚</span>
+              <span class="section-title">Professional Edu.</span>
+            </div>
+            <div class="section-body">
+              <div class="info-row" style="animation-delay:0.3s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Course</span>
+                <span class="row-value">PGDM (M/F/HRM, 2024-26)</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.35s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">College</span>
+                <span class="row-value">SNB College of Pharmacy and Management, Patna (AICTE-New Delhi)</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.4s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Status</span>
+                <span class="row-value">Currently Pursuing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section" style="animation-delay:0.4s">
+            <div class="section-header">
+              <span class="section-icon">⭐</span>
+              <span class="section-title">Experience & Skills</span>
+            </div>
+            <div class="section-body">
+              <div class="info-row" style="animation-delay:0.4s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Occupation</span>
+                <span class="row-value">HRM & Psychologist</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.45s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Skills</span>
+                <span class="row-value">Controlling of Organization Programs</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.5s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Achievement</span>
+                <span class="row-value">Management Excellence Awards, Education Counselling Medal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: Job + Family -->
+        <div class="grid-2col">
+          <div class="info-section" style="animation-delay:0.5s">
+            <div class="section-header">
+              <span class="section-icon">🏦</span>
+              <span class="section-title">Job At SBI</span>
+            </div>
+            <div class="section-body">
+              <div class="info-row" style="animation-delay:0.5s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Current Job</span>
+                <span class="row-value">SBI — Relationship Executive, Patna</span>
+              </div>
+
+              <div style="margin-top:10px; padding-top:8px; border-top: 2px solid rgba(201,151,43,0.3);">
+                <div style="font-family:'Cinzel Decorative',cursive; font-size:0.65rem; color:var(--maroon); letter-spacing:2px; margin-bottom:8px;">CAREER TRANSITIONS</div>
+                <div class="info-row" style="animation-delay:0.55s">
+                  <span class="row-bullet">①</span>
+                  <span class="row-value">Needs Manpower Support Services Pvt. LTD (Karnataka)</span>
+                </div>
+                <div class="info-row" style="animation-delay:0.6s">
+                  <span class="row-bullet">②</span>
+                  <span class="row-value">International Organizations For Standardization, Shantadeep Metals Pvt. Ltd. (Maharashtra)</span>
+                </div>
+                <div class="info-row" style="animation-delay:0.65s">
+                  <span class="row-bullet">③</span>
+                  <span class="row-value">Suzlon Energy Pvt. LTD. — Diploma Training Engineer (Andhra Pradesh)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section" style="animation-delay:0.6s">
+            <div class="section-header">
+              <span class="section-icon">👨‍👩‍👧‍👦</span>
+              <span class="section-title">Family Details</span>
+            </div>
+            <div class="section-body">
+              <div class="info-row" style="animation-delay:0.6s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Father</span>
+                <span class="row-value">Ramanand Mahto</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.65s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Mother</span>
+                <span class="row-value">Chinta Devi</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.7s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Elder Sister</span>
+                <span class="row-value">Chanda Kumari (CCTC, Indian Railway)</span>
+              </div>
+              <div class="info-row" style="animation-delay:0.75s">
+                <span class="row-bullet">◆</span>
+                <span class="row-label">Brothers</span>
+                <span class="row-value">
+                  Kailash Kumar (BPSC Aspirant),<br>
+                  Sudama Kumar,<br>
+                  Ganga Vishnu Kumar,<br>
+                  Raushan Kumar
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end sections-wrapper -->
+
+      <!-- CONTACT SECTION -->
+      <div class="contact-section">
+        <div class="gold-divider"><span class="divider-icon">🌸</span></div>
+        <div class="contact-title" style="margin-top:15px;">✦ CONTACT DETAILS ✦</div>
+        <div class="contact-item">
+          <span class="contact-icon">📱</span>
+          <span class="contact-text">+91 6200586176</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <span class="contact-text">ganesh211gss4u@gmail.com</span>
+        </div>
+        <div class="contact-item" style="flex-direction:column; gap:4px;">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span class="contact-icon">📍</span>
+            <span style="color:var(--bright-gold);">Address</span>
+          </div>
+          <span style="color:var(--cream); font-size:0.85rem;">Ward 08, At+Po- Garhsisai, PS- Vidyapati Nagar,</span>
+          <span style="color:var(--cream); font-size:0.85rem;">Dist- Samastipur, Bihar - 848503</span>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="footer-flowers">🌸 🪷 🌺 🪷 🌸</div>
+        <div class="footer-text">शुभं करोति कल्याणम् — भगवान का आशीर्वाद सदा बना रहे 🙏</div>
+        <div class="footer-flowers" style="margin-top:8px;">🌸 🪷 🌺 🪷 🌸</div>
+      </div>
+
+    </div><!-- end inner-card -->
+  </div><!-- end outer-border -->
+</div><!-- end page-wrapper -->
+
+<script>
+// ===== FALLING PETALS =====
+const petals = ['🌸','🌺','🪷','🌼','🌻','🌹','🏵️'];
+const container = document.getElementById('flowersContainer');
+
+function createPetal() {
+  const petal = document.createElement('div');
+  petal.className = 'petal';
+  petal.textContent = petals[Math.floor(Math.random() * petals.length)];
+  petal.style.left = Math.random() * 100 + 'vw';
+  petal.style.fontSize = (Math.random() * 1.5 + 0.8) + 'rem';
+  const duration = Math.random() * 8 + 6;
+  petal.style.animationDuration = duration + 's';
+  petal.style.animationDelay = Math.random() * 5 + 's';
+  container.appendChild(petal);
+  setTimeout(() => petal.remove(), (duration + 5) * 1000);
+}
+
+// Create initial petals
+for (let i = 0; i < 15; i++) {
+  setTimeout(() => createPetal(), i * 400);
+}
+
+// Keep creating petals
+setInterval(createPetal, 600);
+
+// ===== COUNTDOWN TIMER =====
+const weddingDate = new Date('2026-04-15T00:00:00');
+
+function updateTimer() {
+  const now = new Date();
+  const diff = weddingDate - now;
+
+  if (diff <= 0) {
+    document.getElementById('days').textContent = '00';
+    document.getElementById('hours').textContent = '00';
+    document.getElementById('minutes').textContent = '00';
+    document.getElementById('seconds').textContent = '00';
+    return;
+  }
+
+  const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  document.getElementById('days').textContent    = String(days).padStart(2,'0');
+  document.getElementById('hours').textContent   = String(hours).padStart(2,'0');
+  document.getElementById('minutes').textContent = String(minutes).padStart(2,'0');
+  document.getElementById('seconds').textContent = String(seconds).padStart(2,'0');
+}
+
+updateTimer();
+setInterval(updateTimer, 1000);
+
+// ===== SPARKLES ON CLICK =====
+document.addEventListener('click', (e) => {
+  for (let i = 0; i < 6; i++) {
+    const spark = document.createElement('div');
+    spark.className = 'sparkle';
+    spark.style.left = (e.clientX + (Math.random()-0.5)*40) + 'px';
+    spark.style.top  = (e.clientY + (Math.random()-0.5)*40) + 'px';
+    spark.style.position = 'fixed';
+    spark.style.zIndex = '9999';
+    spark.style.animationDelay = Math.random()*0.3 + 's';
+    spark.style.background = ['#FFD700','#FF69B4','#FF6347','#FFD700'][Math.floor(Math.random()*4)];
+    document.body.appendChild(spark);
+    setTimeout(() => spark.remove(), 2000);
+  }
+});
+</script>
+
+</body>
+</html>
